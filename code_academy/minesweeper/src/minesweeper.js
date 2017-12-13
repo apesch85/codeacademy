@@ -1,18 +1,10 @@
-const blankLine = '  |   |  '
-const guessLine = '1 |   |  '
-const bombLine = '  | B |  '
-const bombBoard = [guessLine, bombLine, blankLine]
-
-
-console.log('This is what an empty board would look like:')
-
-let count = 0;
-while (count < 3) {
-  count += 1;
-  console.log(blankLine);
+const printBoard => (board){
+  console.log('Current Board:')
 }
+var board = [
+  ['', '', ''],
+  ['', '', ''],
+  ['', '', '']
+]
 
-console.log('This is what a board with a guess and a bomb on it would look like:')
-for (var i = 0; i < 3; i++) {
-    console.log(bombBoard[i]);
-}
+console.log(board)
