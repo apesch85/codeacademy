@@ -29,8 +29,12 @@ const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs) => {
     // flow.
     randomRowIndex = Math.floor(Math.random() * numberOfRows);
     randomColIndex = Math.floor(Math.random() * numberOfColumns);
-    board[randomRowIndex][randomColIndex] = 'B';
-    numberOfBombsPlaced += 1;
+
+    if (board[randomRowIndex][randomColIndex] != 'B') {
+      board[randomRowIndex][randomColIndex] = 'B';
+      numberOfBombsPlaced ++;
+    }
+
 };
   return board;
 };
